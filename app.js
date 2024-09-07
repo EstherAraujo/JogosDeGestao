@@ -61,9 +61,7 @@ function pesquisar() {
             // Cria um um novo elemento no html com os resultados
             resultados += `
             <div class="item-resultado">
-                <h2>
-                    <a href="#" target="_blank">${dado.titulo}</a>
-                </h2>
+                <h2>${dado.titulo}</h2>
                 <img src = ${dado.poster} alt="Poster do ${dado.titulo} style="width:200px;height:300px;">
                 <p class="descricao-meta">${dado.descricao}</p>
                 <p class="descricao-meta"><b>Temas:</b> ${obterTemasFormatados(dado)}</p>
